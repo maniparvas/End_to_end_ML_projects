@@ -11,8 +11,6 @@ This project is a complete pipeline for predicting the **Fire Weather Index (FWI
 - [2. Model Building](#2-model-building)
 - [3. Web Application](#3-web-application)
 - [How to Run the Project](#how-to-run-the-project)
-- [Screenshots](#screenshots)
-- [License](#license)
 
 ---
 
@@ -63,3 +61,55 @@ Example:
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 model.fit(X_train_scaled, y_train)
+```
+
+---
+
+## 🌐 3. Web Application
+
+A minimal Flask-based web application allows real-time prediction of FWI from user input.
+
+### Features:
+- Form input for weather data
+- Backend processing and prediction
+- Display of result on the same page
+
+To run:
+```bash
+python app.py
+```
+
+App will run locally on `http://127.0.0.1:5000/`
+
+---
+
+## ▶️ How to Run the Project
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/your-username/fwi-prediction.git
+cd fwi-prediction
+```
+
+2. **Create a virtual environment**
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
+
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run the web app**
+```bash
+python app.py
+```
+
+
+## 🙋‍♂️ Author
+
+Built by [Maniparvas](https://github.com/maniparvas)  
+Feel free to fork or contribute!
+
